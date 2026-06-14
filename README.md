@@ -1,58 +1,54 @@
-# Webcam Emotion Detection on macOS
+# Face Emotion Detection System
 
-- `webcam_emotion_test.py`
-- `trained_emotion_model.keras`
-- `requirements-webcam.txt`
+## Overview
 
-If you want them to test another saved model, send that `.keras` file too.
+A real-time Face Emotion Detection System built using Python, TensorFlow, Keras, and OpenCV. The project detects faces from webcam input and predicts emotions using a trained deep learning model.
 
-## Setup
+## Features
 
-Open Terminal in the folder containing the files.
+* Real-time webcam emotion detection
+* Face detection using OpenCV
+* Emotion classification using deep learning
+* Live emotion prediction display
 
-Create a virtual environment:
+## Technologies Used
+
+* Python
+* TensorFlow
+* Keras
+* OpenCV
+* NumPy
+* Matplotlib
+
+## Dataset
+
+FER2013 Facial Expression Dataset
+
+## Files
+
+* Face Emotion Detection.ipynb – Model training notebook
+* Model_building.ipynb – Model development and experimentation
+* webcam_emotion_test.py – Real-time webcam testing
+* requirements-webcam.txt – Required Python libraries
+
+## Installation
 
 ```bash
-python3 -m venv .venv
+pip install -r requirements-webcam.txt
 ```
 
-Activate it:
-
-```bash
-source .venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-python -m pip install --upgrade pip
-python -m pip install -r requirements-webcam.txt
-```
-
-## Run
+## Run the Project
 
 ```bash
 python webcam_emotion_test.py
 ```
 
-Press `q` to close the webcam window.
+## Future Improvements
 
-If the default camera does not open, try:
+* Improve model accuracy
+* Add more emotion classes
+* Deploy as a web application
 
-```bash
-python webcam_emotion_test.py --camera 1
-```
+## Author
 
-To use a different model file:
-
-```bash
-python webcam_emotion_test.py --model second_model.keras
-```
-
-## macOS Camera Permission
-
-If the camera window opens but no webcam feed appears, allow Terminal or the code editor to use the camera:
-
-`System Settings` -> `Privacy & Security` -> `Camera`
-
-Then close Terminal and run the script again.
+Sharanya Mukherjee
